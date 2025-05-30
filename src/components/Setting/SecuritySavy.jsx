@@ -6,7 +6,7 @@ export default function App() {
       <div className="w-full max-w-5xl"> {/* Container for the whole page content */}
         <h1 className="text-3xl sm:text-4xl font-bold text-gray-800 mb-8 text-center sm:text-left">Security Settings</h1>
  
-        {/* Two-column layout for Password and Devices sections */}
+        
         <div className="grid grid-cols-1 lg:grid-cols-[2fr_1fr] gap-8">
           {/* Left Column - Password Section */}
           <div className="bg-white rounded-xl shadow-lg p-6 sm:p-8">
@@ -16,7 +16,7 @@ export default function App() {
                 The Last Pass password generator creates <br /> random passwords based on parameters set by you.
               </p>
  
-              {/* Current Password Input (static) */}
+              
               <div className="mb-4 w-full">
                 <label htmlFor="currentPassword" className="block text-gray-700 text-sm font-medium mb-2">
                   Current password
@@ -26,7 +26,7 @@ export default function App() {
                   id="currentPassword"
                   className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-200"
                   placeholder="Current password"
-                  // Removed 'value' and 'onChange' for non-functional component
+                  
                 />
               </div>
  
@@ -40,7 +40,7 @@ export default function App() {
                   id="newPassword"
                   className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-200"
                   placeholder="New password"
-                  // Removed 'value' and 'onChange' for non-functional component
+                  
                 />
               </div>
  
@@ -54,7 +54,7 @@ export default function App() {
                   id="confirmPassword"
                   className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-200"
                   placeholder="Confirm password"
-                  // Removed 'value' and 'onChange' for non-functional component
+                  
                 />
               </div>
  
@@ -65,31 +65,28 @@ export default function App() {
                   To create a new password, you have to meet all of the following requirements.
                 </p>
                 <ul className="list-none space-y-2 text-sm">
-                  <li className="flex items-center text-gray-600"> {/* Removed dynamic styling */}
+                  <li className="flex items-center text-gray-600"> 
                     <span className="mr-2">•</span>
                     Minimum 8 characters
                   </li>
-                  <li className="flex items-center text-gray-600"> {/* Removed dynamic styling */}
+                  <li className="flex items-center text-gray-600"> 
                     <span className="mr-2">•</span>
                     At least one special character
                   </li>
-                  <li className="flex items-center text-gray-600"> {/* Removed dynamic styling */}
+                  <li className="flex items-center text-gray-600"> 
                     <span className="mr-2">•</span>
                     At least one number
                   </li>
-                  <li className="flex items-center text-gray-600"> {/* Removed dynamic styling */}
+                  <li className="flex items-center text-gray-600"> 
                     <span className="mr-2">•</span>
                     Can't be the same as a previous
                   </li>
                 </ul>
               </div>
  
-              {/* Message Display for Password Section (removed as no functionality) */}
-              {/* {passwordMessage && ( ... )} */}
- 
-              {/* Change Password Button (no onClick handler) */}
+              
               <button
-                // Removed 'onClick' for non-functional component
+                
                 className="w-full bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 transition duration-200 text-lg font-semibold"
               >
                 Change Password
