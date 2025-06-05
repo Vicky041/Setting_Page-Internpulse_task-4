@@ -8,7 +8,6 @@ import SettingN from "./components/Setting/SettingN";
 function App() {
   return (
     <div>
-      <p className="text-5xl">Task Practice</p>
 
       <SettingN />
       <BillingNew />
